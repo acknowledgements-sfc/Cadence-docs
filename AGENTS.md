@@ -1,33 +1,52 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
 > For Mintlify product knowledge (components, configuration, writing standards),
 > install the Mintlify skill: `npx skills add https://mintlify.com/docs`
 
-# Documentation project instructions
+# Cadence documentation (Mintlify)
+
+Public docs for Cadence. Live URL: `https://cadencemgmt.site/docs` (proxied through the front-door Vercel project).
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+- Built on [Mintlify](https://mintlify.com)
+- Pages are MDX with YAML frontmatter
+- Site config: `docs.json` in this directory
+- Content root for Git deploy: repo subdirectory `mintlify/`
+- Internal build logs and dispatches stay in the app repo `docs/` folder — do not migrate those here
 
-## Terminology
+## Terminology (locked)
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+Use Cadence vocabulary only. Do not invent synonyms.
+
+- **Pursuit** — not "project"
+- **Effort** — not "task" (in user-facing copy)
+- **Exploration** — loop-shaped, no terminus; informs pursuits
+- **Handled** — completion state language
+- **"How do you want to move?"** — canonical prompt phrasing
+- **quiet season** — lull / downtime period
+- **four-beat sensation pattern** — health / status rhythm
+
+No exclamation points. No first-person system voice ("I").
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
+- Active voice, second person ("you")
+- One idea per sentence
+- Sentence case for headings
 - Bold for UI elements: Click **Settings**
 - Code formatting for file names, commands, paths, and code references
+- Iris (`#7c6cfc`) is the only saturated accent — already set in `docs.json`
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+Document: product concepts, guides, and public API reference as they land.
+
+Do not document: admin-only tooling, Clerk/Supabase ops runbooks, fixture accounts, or unclosed design debates from Claude digests.
+
+## Local preview
+
+```bash
+npm run docs:dev
+# or: cd mintlify && mint dev
+```
+
+Validate: `npm run docs:validate`

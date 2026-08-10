@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Cadence",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7c6cfc",
+    "light": "#9d91fd",
+    "dark": "#5b4fd4"
   },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "dark"
+  },
   "navigation": {
     "pages": [
       {
@@ -21,14 +24,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "App repo",
+          "href": "https://github.com/acknowledgements-sfc/cadence-cursor",
+          "icon": "github"
         }
       ]
     }
@@ -40,14 +38,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "App",
+        "href": "https://app.cadencemgmt.site"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open app",
+      "href": "https://app.cadencemgmt.site"
     }
   },
   "contextual": {
@@ -56,17 +54,12 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "cursor"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/acknowledgements-sfc/cadence-cursor"
     }
   }
 }
