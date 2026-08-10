@@ -1,0 +1,40 @@
+---
+title: "Quickstart"
+description: "Run the Cadence Mintlify docs site locally."
+---
+
+## Prerequisites
+
+- Node.js 20.17+
+- Mintlify CLI: `npm i -g mint`
+
+## Preview locally
+
+From the repo root:
+
+```bash
+cd mintlify
+mint dev
+```
+
+Or from the repo root with the npm script:
+
+```bash
+npm run docs:dev
+```
+
+The preview opens at [http://localhost:3000](http://localhost:3000).
+
+## Edit a page
+
+1. Open an `.mdx` file under `mintlify/`.
+2. Save — the local preview hot-reloads.
+3. Add new pages to `docs.json` navigation or they will not appear in the sidebar.
+
+## Validate before shipping
+
+```bash
+cd mintlify
+mint validate
+mint broken-links
+```

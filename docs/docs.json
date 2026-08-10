@@ -1,0 +1,65 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Cadence",
+  "colors": {
+    "primary": "#7c6cfc",
+    "light": "#9d91fd",
+    "dark": "#5b4fd4"
+  },
+  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "dark"
+  },
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "App repo",
+          "href": "https://github.com/acknowledgements-sfc/cadence-cursor",
+          "icon": "github"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "App",
+        "href": "https://app.cadencemgmt.site"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open app",
+      "href": "https://app.cadencemgmt.site"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "cursor"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/acknowledgements-sfc/cadence-cursor"
+    }
+  }
+}
